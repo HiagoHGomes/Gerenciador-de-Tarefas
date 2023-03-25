@@ -8,7 +8,20 @@ ___
 ___
 ## Entidades:
 * Projeto;
-* Tarefa;
+    - Nome,
+    - Descrição,
+    - Data de Criação,
+    - Data de atualização.
+* Tarefa:
+    - Nome,
+    - Descrição,
+    - Status,
+    - Tags,
+    - Observações,
+    - Prazo, 
+    - Data de Criação,
+    - Data de Atualização.
+
 ___
 ## Requisitos:
 * Permitir criar projetos;
@@ -17,3 +30,17 @@ ___
 * Permitir cria tarefas;
 * Permitir alterar tarefa;
 * Permitir deletar tarefa;
+___
+
+# Regras de negócio:
+* Não irá conter um sistema de login;
+* Não haverá o conceito de usuario;
+* Toda tarefa deve pertencer a um projeto;
+___
+
+# Teconoligas utilizadas:
+* Java;
+* MySql;
+
+
+
