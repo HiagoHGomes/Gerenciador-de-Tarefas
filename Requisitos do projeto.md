@@ -7,7 +7,7 @@ ___
 ## Objetivo: Resolver a questão de organização de tarefas de um ou vários projetos.
 ___
 ## Entidades:
-* Projeto;
+* Projeto:
     - Nome,
     - Descrição,
     - Data de Criação,
