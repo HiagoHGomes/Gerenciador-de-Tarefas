@@ -5,6 +5,7 @@
 package TodoApp;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import util.ConnectionFactory;
 
 /**
@@ -15,6 +16,7 @@ public class Main {
     public static void main (String [] args){
         System.out.println("Hello World!");
         Connection c = ConnectionFactory.getConnection();
-        ConnectionFactory.closeConnection(c);
+        PreparedStatement statement = null;
+        ConnectionFactory.closeConnection(c, statement);
     }
 }

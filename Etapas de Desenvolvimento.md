@@ -1,6 +1,6 @@
 * Criação do bando de dados (Ok)
 * Criação das classes de modelo (Ok)
-* Criação da conexão com o banco de dados
+* Criação da conexão com o banco de dados (Ok)
 * Criação das classes de controle (Acesso ao dados do banco)
 * Criação da interface gráfica
     - Criação da tela principal
