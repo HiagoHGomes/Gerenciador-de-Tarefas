@@ -73,6 +73,10 @@ public class Project {
     public String toString() {
         return "Project{" + "id=" + id + ", name=" + name + ", dsecription=" + dsecription + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
     }
+
+    public void setDescription(String text) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
     

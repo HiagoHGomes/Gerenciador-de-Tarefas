@@ -255,9 +255,9 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabelProjectsTitle" min="-2" pref="110" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabelProjectsAdd" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="48" max="32767" attributes="0"/>
+                  <Component id="jLabelProjectsAdd" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -267,7 +267,7 @@
                   <EmptySpace pref="19" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabelProjectsTitle" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                      <Component id="jLabelProjectsAdd" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelProjectsAdd" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -292,6 +292,9 @@
               <Image iconType="3" name="/add.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabelProjectsAddMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
