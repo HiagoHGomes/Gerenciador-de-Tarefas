@@ -187,22 +187,27 @@ public class TaskDialogScreen extends javax.swing.JDialog {
     private void jlabelToolBarSaveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jlabelToolBarSaveMouseClicked
         // TODO add your handling code here:
         try {
-            Task task = new Task();
-            task.setIdProject(project.getId());
-            task.setName(jTextFieldName.getText());
-            task.setDescription(jTextAreaDescription.getText());
-            task.setNotes(jTextAreaNotes.getText());
-            task.setIsCompleted(false);
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/YYYY");
-            Date deadline = null;
-            deadline = dateFormat.parse(jFormattedTextFieldDeadLine.getText());
-            task.setDeadline(deadline);
-            controller.save(task);
-            JOptionPane.showMessageDialog(rootPane, "Tarefa salva com sucesso!");
+            if(jTextFieldName.getText().equals("")|| jFormattedTextFieldDeadLine.getText().isEmpty()){
+                JOptionPane.showMessageDialog(rootPane, "A tarefa não foi salva pois existem campos obrigatorios a serem preenchidos");
+            }else{
+                Task task = new Task();
+                task.setIdProject(project.getId());
+                task.setName(jTextFieldName.getText());
+                task.setDescription(jTextAreaDescription.getText());
+                task.setNotes(jTextAreaNotes.getText());
+                task.setIsCompleted(false);
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/YYYY");
+                Date deadline = null;
+                deadline = dateFormat.parse(jFormattedTextFieldDeadLine.getText());
+                task.setDeadline(deadline);
+                controller.save(task);
+                JOptionPane.showMessageDialog(rootPane, "Tarefa salva com sucesso!");
+                 this.dispose();
+            }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(rootPane, e.getMessage());
         }
-        this.dispose();
+       
     }//GEN-LAST:event_jlabelToolBarSaveMouseClicked
 
     /**
