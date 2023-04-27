@@ -14,7 +14,6 @@ import util.ConnectionFactory;
  */
 public class Main {
     public static void main (String [] args){
-        System.out.println("Hello World!");
         Connection c = ConnectionFactory.getConnection();
         PreparedStatement statement = null;
         ConnectionFactory.closeConnection(c, statement);
